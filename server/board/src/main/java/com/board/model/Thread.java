@@ -1,4 +1,4 @@
-package com.board.board.model;
+package com.board.model;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -27,7 +27,7 @@ public class Thread implements Serializable   {
 	private long id;
 	
 	@Column(name ="Title" , nullable = false)
-	@Length(max = 20)
+	@Length(max = 25)
 	private String Title;
 	
 	@Column(name = "Date", nullable = false )
@@ -37,6 +37,4 @@ public class Thread implements Serializable   {
 	@Column(nullable = false )
 	@Length(max =250 )
 	private String contents;
-	
-
 }

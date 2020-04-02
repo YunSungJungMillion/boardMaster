@@ -1,9 +1,10 @@
-package com.board.board.controller;
+package com.board.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.board.board.repository.ThreadRepository;
+import com.board.repository.ThreadRepository;
+
 @RestController
 public class ThreadController {
 	
@@ -12,6 +13,9 @@ public class ThreadController {
 	
 	public void insertThread(String Title, String Contents) {
 		
+		
 	}
+	
+	
 		
 	}

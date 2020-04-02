@@ -1,4 +1,4 @@
-package com.board.board.controller;
+package com.board.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
