@@ -17,15 +17,17 @@ const useStyles = makeStyles(theme => ({
     height: theme.spacing(3)
   },
   large: {
-    width: 150,
+    width: "100%",
     height: 150
   },
   profileFontSize: {
-    fontSize: 5
+    fontSize: 5,
+    width: "100%"
   },
   introduceFSize: {
     marginTop: 10,
-    fontSize: 8
+    fontSize: 8,
+    width : "100%"
   },
   bt:{
     maxWidth: "10px",
@@ -35,7 +37,21 @@ const useStyles = makeStyles(theme => ({
     fontSize: 1,
     textTransform: 'lowercase',
     lineHeight : 0
+  },
+  TitleBox:{
+    minWidth : "200px",
+    width : "100%",
+    minHeight: "150px",
+    height: "100%",
+    backgroundColor: "lightgreen",
+    fontSize : 50,
+    
+    
+    },
+  outertitleBox : {
+    width: "100%"
   }
+
 }));
 
 const props = {
@@ -78,13 +94,21 @@ const Main = () => {
           <Box {...props.dFjC} className={classes.introduceFSize}>
             {introduce}
           </Box>
-          <Box {...props.dFjE}>
+          <Box {...props.dFjS}>
             <Button {...props.bt} className ={classes.bt} >edit</Button>
           </Box>
         </Box>
         {/*게시판 박스 */}
-        <Box width={"70%"}></Box>
-        
+        <Box className = {classes.outertitleBox}>
+        <Box {...props.dFjC} className = {classes.TitleBox}>느낌적인 느낌적인 대문 인사말</Box>
+
+
+
+
+        {/*박스 엔드*/}
+        </Box>
+       
+
       </Box>
     </div>
   );
